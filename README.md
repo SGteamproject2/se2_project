@@ -1,5 +1,10 @@
 # 베로니카의 추격
 
+<div align = "center">
+  <img src="https://img.shields.io/badge/license-MIT-blue">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Reference-C%23-green">
+</div>
+
 ![chrome_Z51uMJ534k](https://github.com/SGteamproject2/se2_project/assets/162520578/13ba59fe-c291-4f10-a257-7abc2df3e2c5)
 
 ## 📝 목차
@@ -8,6 +13,8 @@
 3. [게임 특징](#-게임-특징)
 4. [시스템 권장 요구사항](#-시스템-권장-요구사항)
 5. [정보](#-정보)
+6. [기여자](기여자)
+7. [라이센스](라이센스)
 
 ## 🌐 게임 배경
 19세기 프랑스에 평소와 같이 지내던 베로니카의 마을에 갑작스럽게 괴한이 출몰해 마을이 쑥대밭이 되었다.
@@ -30,19 +37,23 @@
 ![3(1)](https://github.com/SGteamproject2/se2_project/assets/129351110/17d1ab3f-868c-47aa-8635-7a25a88ff165)
 
 ## 💾 시스템 권장 요구사항
-- 운영체제: Windows 10, 64비트
-- 프로세서: 인텔 i5 또는 차세대 i3 / AMD 동급 제품
-- 그래픽: NVIDIA GTX 960
-- 저장 공간: 2GB의 사용 가능한 공간
+- 안드로이드: Android 6.0 이상
+- iOS: iOS 10.0 이상
+- 메모리: 1GB 이상
+- 저장 공간: 2GB 이상의 여유 공간
 
 ## 📂 정보
 - 게임 이름: 베로니카의 추격
 - 프로젝트 기간: 2024.05-2024.06
-- 개발 엔진 및 언어: Unity & C#
+- 개발 엔진 및 언어: Unity ( 2022.3.25f1 ) & C#
 - 멤버: 이희준, 이은성, 남윤성, 유민협
 
-## ➤  Contributors
+## ➤ 기여자
 
-|![116864160](https://github.com/SGteamproject2/se2_project/assets/162520578/5819a800-21cf-433a-9f8f-ac4cd9cafbbb)|![129351110](https://github.com/SGteamproject2/se2_project/assets/162520578/97f5fe11-4998-45a6-ac6e-85247a333764)|![남윤성](https://placehold.co/100x100)|![162520578](https://github.com/SGteamproject2/se2_project/assets/162520578/de708e82-9c34-4063-9f01-a30629b94206)|
-|---|---|---|---|
-|[이희준](https://github.com/Lee-Hee-Jun)|[이은성](https://github.com/Sim5252)|[남윤성](https://github.com/quar16)|[유민협](https://github.com/asanari751)|      
+<a href="https://github.com/SGteamproject2/se2_project/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SGteamproject2/se2_project" />
+</a>
+
+## ➤ 라이센스
+
+[MIT license](https://github.com/SGteamproject2/se2_project/blob/main/LICENSE) (c) 2024 public
