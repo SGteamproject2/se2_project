@@ -1,5 +1,8 @@
 # 베로니카의 추격
 
+![chrome_Z51uMJ534k](https://github.com/SGteamproject2/se2_project/assets/162520578/13ba59fe-c291-4f10-a257-7abc2df3e2c5)
+
+
 ## 목차
 1. [게임 배경](게임-배경)
 2. [게임 개요](게임-개요)
