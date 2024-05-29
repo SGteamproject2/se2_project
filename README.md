@@ -33,10 +33,10 @@
 - 게임 이름: 베로니카의 추격
 - 프로젝트 기간: 2024.05-2024.06
 - 개발 엔진 및 언어: Unity & C#
-- 멤버:  이은성, 유민협, 남윤성, 이희준
+- 멤버: 이희준, 이은성, 남윤성, 유민협
 
 ## ➤  Contributors
 
 |![116864160](https://github.com/SGteamproject2/se2_project/assets/162520578/5819a800-21cf-433a-9f8f-ac4cd9cafbbb)|![129351110](https://github.com/SGteamproject2/se2_project/assets/162520578/97f5fe11-4998-45a6-ac6e-85247a333764)|![남윤성](https://placehold.co/100x100)|![162520578](https://github.com/SGteamproject2/se2_project/assets/162520578/de708e82-9c34-4063-9f01-a30629b94206)|
 |---|---|---|---|
-|[이은성](https://github.com/Sim5252)|[유민협](https://github.com/asanari751)|[남윤성](https://github.com/quar16)|[이희준](https://github.com/Lee-Hee-Jun)|        
+|[이희준](https://github.com/Lee-Hee-Jun)|[이은성](https://github.com/Sim5252)|[남윤성](https://github.com/quar16)|[유민협](https://github.com/asanari751)|      
