@@ -18,10 +18,17 @@
 
 ## 🎮 게임 특징
 
-||||
-|-----|-----|-----|
-|<img alt = "t_image_1" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/76b95152-1cce-4be6-8945-04f04ef87842">|<img alt = "t_image_2" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/f23ecaec-3452-41d0-a18a-9bcf22051425">|<img alt = "t_image_3" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/ea2a5322-ba16-49b8-ad58-b406f8548f6e">|
-|다양한 퍼즐을 해결하세요.|사람들의 이야기를 듣고 추리하세요.|당신의 추리력과 상상력을 동원해 </br> 범인을 찾으세요.|
+| <img alt = "t_image_1" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/76b95152-1cce-4be6-8945-04f04ef87842" width="600"> | <img alt = "t_image_2" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/f23ecaec-3452-41d0-a18a-9bcf22051425" width="600"> | <img alt = "t_image_3" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/ea2a5322-ba16-49b8-ad58-b406f8548f6e" width="600"> |
+|:--------:|:--------:|:--------:|
+- 다양한 퍼즐을 해결하세요. </br>
+
+<img alt = "t_image_4" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/ee455984-e961-42d7-806b-e9d11ebe5ba5" width="600"> | <img alt = "t_image_5" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/39d450db-7690-4819-ae49-08d47e9eddb1" width="600"> | <img alt = "t_image_6" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/197a82e2-b2d7-49c8-b718-ca51d982e718" width="600">
+|:--------:|:--------:|:--------:|
+- 사람들의 이야기를 듣고 추리하세요. </br>
+
+| <img alt = "t_image_7" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/7a21f6d8-701b-4e87-af38-8968bc046dfb" width="300"> |
+|:------:|
+- 당신의 추리력과 상상력을 동원해 범인을 찾으세요.
 
 ## 💾 시스템 권장 요구사항
 - 플랫폼: Android, iOS
