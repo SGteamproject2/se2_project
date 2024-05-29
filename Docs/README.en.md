@@ -5,26 +5,26 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/Reference-C%23-green">
 </div> </br>
 
-![chrome_Z51uMJ534k](https://github.com/SGteamproject2/se2_project/assets/162520578/13ba59fe-c291-4f10-a257-7abc2df3e2c5)
+<img alt="Title_V" src="https://github.com/SGteamproject2/se2_project/assets/162520578/5edfd7b1-fb23-4f31-b861-240a21bf263c">
 
 ## 🌐 Background
 In a village in 19th century France, where Veronica lived as usual, a sudden appearance of a villain turned the village into a mess. After witnessing this scene, Veronica begins to trace the villain's footsteps by meeting villagers and solving quizzes they give her to find out where the villain went.
 
 ## 📑 Overview
-Veronica's Pursuit is a game where you explore various locations in the village, collect clues about the incident, participate in conversations, and track down the suspect.
+Veronica's Chase is a game where you explore various locations in the village, collect clues about the incident, participate in conversations, and track down the suspect.
 
 ## 🎮 Features
-- Solve diverse puzzles.
+| <img alt = "t_image_1" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/76b95152-1cce-4be6-8945-04f04ef87842" width="600"> | <img alt = "t_image_2" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/f23ecaec-3452-41d0-a18a-9bcf22051425" width="600"> | <img alt = "t_image_3" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/ea2a5322-ba16-49b8-ad58-b406f8548f6e" width="600"> |
+|:--------:|:--------:|:--------:|
+- Solve diverse puzzles. </br>
 
-![그림1](https://github.com/SGteamproject2/se2_project/assets/129351110/8496c19a-7b65-4800-90ef-395464389e8a)
+<img alt = "t_image_4" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/ee455984-e961-42d7-806b-e9d11ebe5ba5" width="600"> | <img alt = "t_image_5" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/39d450db-7690-4819-ae49-08d47e9eddb1" width="600"> | <img alt = "t_image_6" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/197a82e2-b2d7-49c8-b718-ca51d982e718" width="600">
+|:--------:|:--------:|:--------:|
+- Listen to people's stories and deduce. </br>
 
-- Listen to people's stories and deduce.
-
-![22](https://github.com/SGteamproject2/se2_project/assets/129351110/3c16bd0b-df37-4826-a8fa-b6b88e457ea1)
-
+| <img alt = "t_image_7" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/7a21f6d8-701b-4e87-af38-8968bc046dfb" width="300"> |
+|:------:|
 - Use your deduction and imagination to find the culprit.
-
-![3(1)](https://github.com/SGteamproject2/se2_project/assets/129351110/17d1ab3f-868c-47aa-8635-7a25a88ff165)
 
 ## 💾 System Requirements
 - Android: Android 6.0 or higher
