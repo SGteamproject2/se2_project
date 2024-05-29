@@ -7,6 +7,8 @@
 
 ![chrome_Z51uMJ534k](https://github.com/SGteamproject2/se2_project/assets/162520578/13ba59fe-c291-4f10-a257-7abc2df3e2c5)
 
+[English](./Docs/README.en.md)
+
 ## 🌐 게임 배경
 19세기 프랑스에 평소와 같이 지내던 베로니카의 마을에 갑작스럽게 괴한이 출몰해 마을이 쑥대밭이 되었다.
 이에 베로니카는 그 광경을 목격함으로써 그 괴한이 어디로 이동했는지 마을 주민들을 만나 그들이 주는 퀴즈를 풀어 그의 발자취를 쫓기 시작한다.
