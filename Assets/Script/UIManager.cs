@@ -1,17 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 // UI를 관리하는 스크립트
-// 구현 기능 : 버튼별 기능, UI 패널 선택적 활성화 기능 
+// 구현 기능 : 버튼별 기능, UI 패널 선택적 활성화 기능
 public class UIManager : MonoBehaviour
 {
-    public static UIManager Instance
-    {
-        get; private set;
-    }
+    public static UIManager Instance { get; private set; }
 
     private void Awake()
     {
@@ -34,9 +31,9 @@ public class UIManager : MonoBehaviour
     public bool Button_Press;
     public string Button_State;
 
-    public void UI_Update(int goldenkey,int silverkey)
+    public void UI_Update(int goldenkey, int silverkey)
     {
-        if(Button_Press == true)
+        if (Button_Press == true)
         {
             Player.Instance.InputMove(Button_State);
         }

@@ -2,22 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// 플레이어 캐릭터 스크립트 
+// 플레이어 캐릭터 스크립트
 // 구현 기능 : 이동, 대화
 
 
 public class Player : MonoBehaviour
 {
-    public static Player Instance
-    {
-        get; private set;
-    }
+    public static Player Instance { get; private set; }
 
     private void Awake()
     {
         Instance = this;
     }
-
 
     // 플레이어의 상태
     private enum PlayerState
@@ -38,24 +34,22 @@ public class Player : MonoBehaviour
     // 플레이어 캐릭터의 Update함수
     public void Player_Update()
     {
-        if(player_state == PlayerState.Move)
-        {
-            
-        }
-        else
-        {
-
-        }
+        if (player_state == PlayerState.Move) { }
+        else { }
         transform.position = ClampPosition(transform.position);
     }
 
     private Vector3 ClampPosition(Vector3 postion)
     {
-        return new Vector3
-            (
-            Mathf.Clamp(postion.x, CameraMovement.Instance.LimitLeft.transform.position.x, CameraMovement.Instance.LimitRight.transform.position.x),
-            transform.position.y, 0
-            );
+        return new Vector3(
+            Mathf.Clamp(
+                postion.x,
+                CameraMovement.Instance.LimitLeft.transform.position.x,
+                CameraMovement.Instance.LimitRight.transform.position.x
+            ),
+            transform.position.y,
+            0
+        );
     }
 
     // 캐릭터 이동을 입력받는 함수
@@ -100,8 +94,6 @@ public class Player : MonoBehaviour
                 break;
         }
     }
-
-    
 
     // 현제 대상인 NPC의 이름을 반환한다.
     public string return_name()

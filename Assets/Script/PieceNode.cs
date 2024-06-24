@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class PieceNode : MonoBehaviour, IDragHandler, IEndDragHandler
 {
-    // 자신이 드래그 되었을떼 
+    // 자신이 드래그 되었을떼
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = eventData.position;
@@ -18,10 +18,22 @@ public class PieceNode : MonoBehaviour, IDragHandler, IEndDragHandler
         {
             if (Check_Node() == true)
             {
-                if (Vector3.Distance(QuizManager.Instance.snap_pos.transform.GetChild(i).position, transform.position) < QuizManager.Instance.snapOffset)
+                if (
+                    Vector3.Distance(
+                        QuizManager.Instance.snap_pos.transform.GetChild(i).position,
+                        transform.position
+                    ) < QuizManager.Instance.snapOffset
+                )
                 {
-                    Debug.Log(Vector3.Distance(QuizManager.Instance.snap_pos.transform.GetChild(i).position, transform.position));
-                    transform.position = QuizManager.Instance.snap_pos.transform.GetChild(i).position;
+                    Debug.Log(
+                        Vector3.Distance(
+                            QuizManager.Instance.snap_pos.transform.GetChild(i).position,
+                            transform.position
+                        )
+                    );
+                    transform.position = QuizManager
+                        .Instance.snap_pos.transform.GetChild(i)
+                        .position;
                     QuizManager.Instance.Check_snap_pos.Add(i);
                     return;
                 }

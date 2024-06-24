@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// 대화 스크립트 
+// 대화 스크립트
 public class DialogManager : MonoBehaviour
 {
-    public static DialogManager Instance
-    {
-        get; private set; 
-    }
+    public static DialogManager Instance { get; private set; }
 
     private void Awake()
     {
@@ -24,9 +21,9 @@ public class DialogManager : MonoBehaviour
     void Con_String(List<Dictionary<string, object>> data)
     {
         Debug.Log("작동 시작");
-        for(int i = 0; i < data.Count; i++)
+        for (int i = 0; i < data.Count; i++)
         {
-            if((string)data[i]["NPC"] == Player.Instance.return_name())
+            if ((string)data[i]["NPC"] == Player.Instance.return_name())
             {
                 Debug.Log("저장");
                 sentences.Enqueue((string)data[i]["Text"]);
@@ -48,7 +45,7 @@ public class DialogManager : MonoBehaviour
     // coroutine을 사용하여 타이핑 효과 구현
     public void Nextsentence()
     {
-        if(sentences.Count == 0)
+        if (sentences.Count == 0)
         {
             EndDialog();
             return;
@@ -66,7 +63,7 @@ public class DialogManager : MonoBehaviour
         dialogText.text = "";
 
         // 글자를 하나씩 추가하여 타이핑 효과를 준다.
-        foreach(char letter in sentence.ToCharArray())
+        foreach (char letter in sentence.ToCharArray())
         {
             dialogText.text += letter;
             yield return new WaitForSeconds(Wait_time);

@@ -3,13 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // 퀴즈 관리 스크립트
-// 구현 기능 : 퀴즈 별 실행 함수 작성 
+// 구현 기능 : 퀴즈 별 실행 함수 작성
 public class QuizManager : MonoBehaviour
 {
-    public static QuizManager Instance
-    {
-        get; private set;
-    }
+    public static QuizManager Instance { get; private set; }
 
     private void Awake()
     {
@@ -40,11 +37,13 @@ public class QuizManager : MonoBehaviour
 
     public int snapOffset;
 
-    public GameObject Node1, Node2;
+    public GameObject Node1,
+        Node2;
     public GameObject snap_pos;
 
     public List<int> Check_snap_pos;
-    private Vector2 origin1, origin2;
+    private Vector2 origin1,
+        origin2;
 
     public void Quiz_Update()
     {
