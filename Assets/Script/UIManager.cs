@@ -4,8 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-// UI¸¦ °ü¸®ÇÏ´Â ½ºÅ©¸³Æ®
-// ±¸Çö ±â´É : ¹öÆ°º° ±â´É, UI ÆĞ³Î ¼±ÅÃÀû È°¼ºÈ­ ±â´É
+// UIë¥¼ ê´€ë¦¬í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸
+// êµ¬í˜„ ê¸°ëŠ¥ : ë²„íŠ¼ë³„ ê¸°ëŠ¥, UI íŒ¨ë„ ì„ íƒì  í™œì„±í™” ê¸°ëŠ¥ 
 public class UIManager : MonoBehaviour
 {
     public static UIManager Instance
@@ -45,7 +45,7 @@ public class UIManager : MonoBehaviour
         //SilverKey_Text.text = "X " + silverkey;
     }
 
-    // »óÈ²¿¡ ¸ÂÃç ÆĞ³Î ¿ÀºêÁ§Æ®¸¦ È°¼ºÈ­ ½ÃÄÑÁÖ´Â ÇÔ¼ö
+    // ìƒí™©ì— ë§ì¶° íŒ¨ë„ ì˜¤ë¸Œì íŠ¸ë¥¼ í™œì„±í™” ì‹œì¼œì£¼ëŠ” í•¨ìˆ˜
     public void Open_Panel(string name)
     {
         Move_Panel.SetActive(false);
@@ -66,7 +66,7 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    // ¿À¸¥ÂÊ ÀÌµ¿
+    // ì˜¤ë¥¸ìª½ ì´ë™
     public void Right_Move()
     {
         Button_State = "Right";
@@ -74,7 +74,7 @@ public class UIManager : MonoBehaviour
         Player.Instance.State_Change("Move");
     }
 
-    // ¿ŞÂÊ ÀÌµ¿
+    // ì™¼ìª½ ì´ë™
     public void Left_Move()
     {
         Button_State = "Left";
@@ -82,7 +82,7 @@ public class UIManager : MonoBehaviour
         Player.Instance.State_Change("Move");
     }
 
-    // ¹öÆ° »óÅÂ ÃÊ±âÈ­
+    // ë²„íŠ¼ ìƒíƒœ ì´ˆê¸°í™”
     public void Reset_State()
     {
         Button_State = null;
@@ -90,15 +90,15 @@ public class UIManager : MonoBehaviour
         Player.Instance.State_Change("Idle");
     }
 
-    // ¼ıÀÚ ¹öÆ° ÇÔ¼ö
-    // ¹öÆ°À» ´©¸£¸é ´©¸¥ ¿ÀºêÁ§Æ®¸¦ ÀÌ¿ëÇÏ¿© °ªÀ» Àü´ŞÇÑ´Ù.
+    // ìˆ«ì ë²„íŠ¼ í•¨ìˆ˜
+    // ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ ëˆ„ë¥¸ ì˜¤ë¸Œì íŠ¸ë¥¼ ì´ìš©í•˜ì—¬ ê°’ì„ ì „ë‹¬í•œë‹¤.
     public void Number_button()
     {
-        // ´­·¶´ø ¹öÆ°ÀÇ ÀÌ¸§À» ÀúÀå
+        // ëˆŒë €ë˜ ë²„íŠ¼ì˜ ì´ë¦„ì„ ì €ì¥
         string Name = EventSystem.current.currentSelectedGameObject.name;
     }
 
-    // ÇØ»óµµ ¼³Á¤ ÇÔ¼ö
+    // í•´ìƒë„ ì„¤ì • í•¨ìˆ˜
     private void SetResoultion()
     {
         int setW = 1080;
@@ -109,13 +109,13 @@ public class UIManager : MonoBehaviour
 
         Screen.SetResolution(setW, (int)((float)deviceH / deviceW) * setW, true);
 
-        // ±â±âÀÇ ÇØ»óµµ ºñ°¡ ´õ Å¬ °æ¿ì
+        // ê¸°ê¸°ì˜ í•´ìƒë„ ë¹„ê°€ ë” í´ ê²½ìš°
         if ((float)setW / setH < (float)deviceW / deviceH)
         {
             float newW = ((float)setW / setH) / ((float)deviceW / deviceH);
             Camera.main.rect = new Rect((1f - newW) / 2f, 0f, newW, 1f);
         }
-        else // °ÔÀÓÀÇ ÇØ»óµµ ºñ°¡ ´õ Å« °æ¿ì
+        else // ê²Œì„ì˜ í•´ìƒë„ ë¹„ê°€ ë” í° ê²½ìš°
         {
             float newH = ((float)deviceW / deviceH) / ((float)setW / setH);
             Camera.main.rect = new Rect(0f, (1f - newH) / 2f, 1f, newH);

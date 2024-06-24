@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class MinimapNode : MonoBehaviour
 {
-    // ¹Ì´Ï¸Ê¿¡¼­ ÀÚ½ÅÀ» ³ªÅ¸³»´Â ÇÔ¼ö
+    // ë¯¸ë‹ˆë§µì—ì„œ ìì‹ ì„ ë‚˜íƒ€ë‚´ëŠ” í•¨ìˆ˜ 
     public void Show()
     {
         gameObject.SetActive(true);
     }
 
-    // ¹Ì´Ï¸Ê¿¡¼­ ÀÚ½ÅÀ» ¼û±â´Â ÇÔ¼ö
+    // ë¯¸ë‹ˆë§µì—ì„œ ìì‹ ì„ ìˆ¨ê¸°ëŠ” í•¨ìˆ˜
     public void Hide()
     {
         gameObject.SetActive(false);

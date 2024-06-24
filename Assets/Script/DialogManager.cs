@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-// ´ëÈ­ ½ºÅ©¸³Æ®
+// ëŒ€í™” ìŠ¤í¬ë¦½íŠ¸ 
 public class DialogManager : MonoBehaviour
 {
     public static DialogManager Instance
     {
-        get; private set;
+        get; private set; 
     }
 
     private void Awake()
@@ -20,21 +20,21 @@ public class DialogManager : MonoBehaviour
     public Text dialogText;
     private Queue<string> sentences = new Queue<string>();
 
-    // ´ëÈ­¿¡ »ç¿ëÇÒ ´ë»ç¸¦ ±¸ºĞÇÏ¿© ´Ù½Ã ÀúÀåÇÏ´Â ÇÔ¼ö
+    // ëŒ€í™”ì— ì‚¬ìš©í•  ëŒ€ì‚¬ë¥¼ êµ¬ë¶„í•˜ì—¬ ë‹¤ì‹œ ì €ì¥í•˜ëŠ” í•¨ìˆ˜
     void Con_String(List<Dictionary<string, object>> data)
     {
-        Debug.Log("ÀÛµ¿ ½ÃÀÛ");
+        Debug.Log("ì‘ë™ ì‹œì‘");
         for(int i = 0; i < data.Count; i++)
         {
             if((string)data[i]["NPC"] == Player.Instance.return_name())
             {
-                Debug.Log("ÀúÀå");
+                Debug.Log("ì €ì¥");
                 sentences.Enqueue((string)data[i]["Text"]);
             }
         }
     }
 
-    // ´ëÈ­°¡ ½ÃÀÛµÉ½Ã È£ÃâµÇ´Â ÇÔ¼ö
+    // ëŒ€í™”ê°€ ì‹œì‘ë ì‹œ í˜¸ì¶œë˜ëŠ” í•¨ìˆ˜
     public void Start_Dialog()
     {
         UIManager.Instance.Dialog_Panel.gameObject.SetActive(true);
@@ -44,8 +44,8 @@ public class DialogManager : MonoBehaviour
         Nextsentence();
     }
 
-    // ´ÙÀ½ ¹®ÀåÀ¸·Î ³Ñ¾î°¡±â
-    // coroutineÀ» »ç¿ëÇÏ¿© Å¸ÀÌÇÎ È¿°ú ±¸Çö
+    // ë‹¤ìŒ ë¬¸ì¥ìœ¼ë¡œ ë„˜ì–´ê°€ê¸°
+    // coroutineì„ ì‚¬ìš©í•˜ì—¬ íƒ€ì´í•‘ íš¨ê³¼ êµ¬í˜„
     public void Nextsentence()
     {
         if(sentences.Count == 0)
@@ -59,13 +59,13 @@ public class DialogManager : MonoBehaviour
         StartCoroutine(TypeSentence(sentence));
     }
 
-    // ±¸ÇöµÈ ÄÚ·çÆ¾ ÇÔ¼ö
-    // Å¸ÀÌÇÎ È¿°ú¸¦ ÁØ´Ù.
+    // êµ¬í˜„ëœ ì½”ë£¨í‹´ í•¨ìˆ˜
+    // íƒ€ì´í•‘ íš¨ê³¼ë¥¼ ì¤€ë‹¤.
     IEnumerator TypeSentence(string sentence)
     {
         dialogText.text = "";
 
-        // ±ÛÀÚ¸¦ ÇÏ³ª¾¿ Ãß°¡ÇÏ¿© Å¸ÀÌÇÎ È¿°ú¸¦ ÁØ´Ù.
+        // ê¸€ìë¥¼ í•˜ë‚˜ì”© ì¶”ê°€í•˜ì—¬ íƒ€ì´í•‘ íš¨ê³¼ë¥¼ ì¤€ë‹¤.
         foreach(char letter in sentence.ToCharArray())
         {
             dialogText.text += letter;
@@ -73,7 +73,7 @@ public class DialogManager : MonoBehaviour
         }
     }
 
-    // ´ëÈ­°¡ ³¡³¯¶§ È£ÃâµÇ´Â ÇÔ¼ö
+    // ëŒ€í™”ê°€ ëë‚ ë•Œ í˜¸ì¶œë˜ëŠ” í•¨ìˆ˜
     void EndDialog()
     {
         QuizManager.Instance.Quiz_Start();

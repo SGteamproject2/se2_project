@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// °ÔÀÓ µ¥ÀÌÅÍ °ü¸® ½ºÅ©¸³Æ®
+// ê²Œì„ ë°ì´í„° ê´€ë¦¬ ìŠ¤í¬ë¦½íŠ¸ 
 public class DataBase
 {
     private static List<Dictionary<string, object>> Sentences_data = CSVParser.Read("Sentence");
@@ -13,7 +13,7 @@ public class DataBase
         Answer
     }
 
-    public static List<Dictionary<string,object>> con_Data(Kind kind)
+    public static List<Dictionary<string, object>> con_Data(Kind kind)
     {
         switch (kind)
         {

@@ -5,13 +5,13 @@ using UnityEngine.EventSystems;
 
 public class PieceNode : MonoBehaviour, IDragHandler, IEndDragHandler
 {
-    // ÀÚ½ÅÀÌ µå·¡±× µÇ¾úÀ»¶¼
+    // ìì‹ ì´ ë“œë˜ê·¸ ë˜ì—ˆì„ë–¼ 
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = eventData.position;
     }
 
-    // ÀÚ½ÅÀÇ µå·¡±×°¡ ³¡³µÀ»¶¼
+    // ìì‹ ì˜ ë“œë˜ê·¸ê°€ ëë‚¬ì„ë–¼
     public void OnEndDrag(PointerEventData eventData)
     {
         for (int i = 0; i < QuizManager.Instance.snap_pos.transform.childCount; i++)
@@ -31,7 +31,7 @@ public class PieceNode : MonoBehaviour, IDragHandler, IEndDragHandler
         QuizManager.Instance.Reset_Pos();
     }
 
-    // ÇöÁ¦ ¿ÀÇÁ¼ÂµÉ À§Ä¡¿¡ ´Ù¸¥ ¿ÀºêÁ§Æ®°¡ ÀÖ´ÂÁö È®ÀÎ
+    // í˜„ì œ ì˜¤í”„ì…‹ë  ìœ„ì¹˜ì— ë‹¤ë¥¸ ì˜¤ë¸Œì íŠ¸ê°€ ìˆëŠ”ì§€ í™•ì¸
     private bool Check_Node()
     {
         for (int i = 0; i < QuizManager.Instance.Check_snap_pos.Count; i++)

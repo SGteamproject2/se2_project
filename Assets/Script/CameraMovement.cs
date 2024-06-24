@@ -19,22 +19,22 @@ public class CameraMovement : MonoBehaviour
     public Camera MinimapCamera;
     public float speed;
 
-    // Ä«¸Ş¶ó ¾÷µ¥ÀÌÆ® ÇÔ¼ö
+    // ì¹´ë©”ë¼ ì—…ë°ì´íŠ¸ í•¨ìˆ˜
     public void Camera_Update()
     {
         Camera_MovetoPlayer();
         Camera_MoveLimit();
     }
 
-    // Ä«¸Ş¶óÀÇ À§Ä¡¸¦ ÇÃ·¹ÀÌ¾î¿¡°Ô °íÁ¤ÇÏ´Â ÇÔ¼ö
+    // ì¹´ë©”ë¼ì˜ ìœ„ì¹˜ë¥¼ í”Œë ˆì´ì–´ì—ê²Œ ê³ ì •í•˜ëŠ” í•¨ìˆ˜
     private void Camera_MovetoPlayer()
     {
         transform.position = new Vector3(Vector3.Lerp(transform.position, player.transform.position, speed * Time.deltaTime).x, Vector3.Lerp(transform.position, player.transform.position, speed * Time.deltaTime).y, -10);
         MinimapCamera.transform.position = new Vector3(player.transform.position.x, player.transform.position.y, -10);
     }
 
-    // Ä«¸Ş¶óÀÇ ÀÌµ¿À» Á¦ÇÑÇÏ´Â ÇÔ¼ö
-    // ¸Ê ¹ÛÀ¸·Î Ä«¸Ş¶ó°¡ ³ª°¡Áö ¾Ê°Ô²û Á¶ÀıÇÏ´Â ±â´É
+    // ì¹´ë©”ë¼ì˜ ì´ë™ì„ ì œí•œí•˜ëŠ” í•¨ìˆ˜
+    // ë§µ ë°–ìœ¼ë¡œ ì¹´ë©”ë¼ê°€ ë‚˜ê°€ì§€ ì•Šê²Œë” ì¡°ì ˆí•˜ëŠ” ê¸°ëŠ¥
     private void Camera_MoveLimit()
     {
         float ClampX = Mathf.Clamp(transform.position.x, LimitLeft.transform.position.x + Camera.main.orthographicSize * 1.8f, LimitRight.transform.position.x - Camera.main.orthographicSize * 1.8f);

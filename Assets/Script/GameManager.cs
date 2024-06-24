@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
         Instance = this;
     }
 
-    // °ÔÀÓ ÀçÈ­
+    // ê²Œì„ ì¬í™” 
     public int Gold_Key;
     public int Silver_Key;
 

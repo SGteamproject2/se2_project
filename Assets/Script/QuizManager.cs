@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ÄûÁî °ü¸® ½ºÅ©¸³Æ®
-// ±¸Çö ±â´É : ÄûÁî º° ½ÇÇà ÇÔ¼ö ÀÛ¼º
+// í€´ì¦ˆ ê´€ë¦¬ ìŠ¤í¬ë¦½íŠ¸
+// êµ¬í˜„ ê¸°ëŠ¥ : í€´ì¦ˆ ë³„ ì‹¤í–‰ í•¨ìˆ˜ ì‘ì„± 
 public class QuizManager : MonoBehaviour
 {
     public static QuizManager Instance
@@ -32,10 +32,10 @@ public class QuizManager : MonoBehaviour
 
     QuizState state;
 
-    // ÇÃ·¹ÀÌ¾îÀÇ Á¤´äÀ» ÀúÀåÇÒ º¯¼ö
+    // í”Œë ˆì´ì–´ì˜ ì •ë‹µì„ ì €ì¥í•  ë³€ìˆ˜
     private string Answer = "";
 
-    // ÇöÁ¦ ¹®Á¦ÀÇ ¹øÈ£¸¦ ÀúÀåÇÒ º¯¼ö
+    // í˜„ì œ ë¬¸ì œì˜ ë²ˆí˜¸ë¥¼ ì €ì¥í•  ë³€ìˆ˜
     public int Quiz_number = 0;
 
     public int snapOffset;
@@ -66,14 +66,14 @@ public class QuizManager : MonoBehaviour
         }
     }
 
-    // NodeÀÇ À§Ä¡°ªÀ» ¸®¼ÂÇÏ´Â ÇÔ¼ö
+    // Nodeì˜ ìœ„ì¹˜ê°’ì„ ë¦¬ì…‹í•˜ëŠ” í•¨ìˆ˜
     public void Reset_Pos()
     {
         Node1.transform.localPosition = origin1;
         Node2.transform.localPosition = origin2;
     }
 
-    // ÄûÁî ½ÃÀÛ ÇÔ¼ö
+    // í€´ì¦ˆ ì‹œì‘ í•¨ìˆ˜
     public void Quiz_Start()
     {
         Reset_Quiz();
@@ -81,7 +81,7 @@ public class QuizManager : MonoBehaviour
         UIManager.Instance.Open_Panel("Quiz");
     }
 
-    // ÄûÁî ÃÊ±âÈ­ ÇÔ¼ö
+    // í€´ì¦ˆ ì´ˆê¸°í™” í•¨ìˆ˜
     public void Reset_Quiz()
     {
         Answer = "";
@@ -89,21 +89,21 @@ public class QuizManager : MonoBehaviour
         Check_snap_pos = new List<int>();
     }
 
-    // ÄûÁî Á¤´ä Á¦Ãâ ÇÔ¼ö
+    // í€´ì¦ˆ ì •ë‹µ ì œì¶œ í•¨ìˆ˜
     public void Compare_answer()
     {
         Reset_Quiz();
     }
 
-    // ÄûÁî Á¾·á ÇÔ¼ö
+    // í€´ì¦ˆ ì¢…ë£Œ í•¨ìˆ˜
     public void Quiz_End()
     {
         state = QuizState.End;
         UIManager.Instance.Open_Panel("Move");
     }
 
-    // Á¤´äÀ» ÀúÀåÇÏ´Â ÇÔ¼ö
-    // ÇÃ·¹ÀÌ¾î°¡ ¼ıÀÚ ¹öÆ°À» ´©¸¦¶§ È£ÃâµÇ¾î °ªÀ» ÀúÀåÇÑ´Ù.
+    // ì •ë‹µì„ ì €ì¥í•˜ëŠ” í•¨ìˆ˜
+    // í”Œë ˆì´ì–´ê°€ ìˆ«ì ë²„íŠ¼ì„ ëˆ„ë¥¼ë•Œ í˜¸ì¶œë˜ì–´ ê°’ì„ ì €ì¥í•œë‹¤.
     public void Save_Answer(string answ)
     {
         Answer += answ;

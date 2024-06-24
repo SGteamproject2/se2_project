@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// ÇÃ·¹ÀÌ¾î Ä³¸¯ÅÍ ½ºÅ©¸³Æ®
-// ±¸Çö ±â´É : ÀÌµ¿, ´ëÈ­
+// í”Œë ˆì´ì–´ ìºë¦­í„° ìŠ¤í¬ë¦½íŠ¸ 
+// êµ¬í˜„ ê¸°ëŠ¥ : ì´ë™, ëŒ€í™”
 
 
 public class Player : MonoBehaviour
@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     }
 
 
-    // ÇÃ·¹ÀÌ¾îÀÇ »óÅÂ
+    // í”Œë ˆì´ì–´ì˜ ìƒíƒœ
     private enum PlayerState
     {
         Idle,
@@ -28,14 +28,14 @@ public class Player : MonoBehaviour
         Quiz
     }
 
-    // ÇÃ·¹ÀÌ¾î Ä³¸¯ÅÍÀÇ ¼Óµµ
+    // í”Œë ˆì´ì–´ ìºë¦­í„°ì˜ ì†ë„
     public float Player_Speed;
     private PlayerState player_state = PlayerState.Idle;
 
-    // ´ëÈ­¸¦ ÁøÇàÇÒ NPC¸¦ ÀúÀå
+    // ëŒ€í™”ë¥¼ ì§„í–‰í•  NPCë¥¼ ì €ì¥
     public GameObject Target_NPC;
 
-    // ÇÃ·¹ÀÌ¾î Ä³¸¯ÅÍÀÇ UpdateÇÔ¼ö
+    // í”Œë ˆì´ì–´ ìºë¦­í„°ì˜ Updateí•¨ìˆ˜
     public void Player_Update()
     {
         if(player_state == PlayerState.Move)
@@ -58,10 +58,10 @@ public class Player : MonoBehaviour
             );
     }
 
-    // Ä³¸¯ÅÍ ÀÌµ¿À» ÀÔ·Â¹Ş´Â ÇÔ¼ö
-    // ÁÂ ¿ì ÀÌµ¿¸¸ °¡´ÉÇÑ È¾½ºÅ©·Ñ °ÔÀÓÀÌ´Ù.
-    // ¸ğ¹ÙÀÏ °ÔÀÓÀ¸·Î È­¸é ÅÍÄ¡¸¦ »ç¿ëÇÏ¿© Ä³¸¯ÅÍ°¡ ÀÌµ¿ÇÑ´Ù.
-    // ÁÂÃø È­¸éÀ» Å¬¸¯ÇÏ¸é ÁÂÃøÀ¸·Î ¿ìÃøÈ­¸éÀ» Å¬¸¯ÇÏ¸é ¿ìÃøÀ¸·Î ÀÌµ¿ÇÑ´Ù.
+    // ìºë¦­í„° ì´ë™ì„ ì…ë ¥ë°›ëŠ” í•¨ìˆ˜
+    // ì¢Œ ìš° ì´ë™ë§Œ ê°€ëŠ¥í•œ íš¡ìŠ¤í¬ë¡¤ ê²Œì„ì´ë‹¤.
+    // ëª¨ë°”ì¼ ê²Œì„ìœ¼ë¡œ í™”ë©´ í„°ì¹˜ë¥¼ ì‚¬ìš©í•˜ì—¬ ìºë¦­í„°ê°€ ì´ë™í•œë‹¤.
+    // ì¢Œì¸¡ í™”ë©´ì„ í´ë¦­í•˜ë©´ ì¢Œì¸¡ìœ¼ë¡œ ìš°ì¸¡í™”ë©´ì„ í´ë¦­í•˜ë©´ ìš°ì¸¡ìœ¼ë¡œ ì´ë™í•œë‹¤.
     public void InputMove(string way)
     {
         switch (way)
@@ -75,13 +75,13 @@ public class Player : MonoBehaviour
         }
     }
 
-    // Ä³¸¯ÅÍ ÀÌµ¿ ÇÔ¼ö
+    // ìºë¦­í„° ì´ë™ í•¨ìˆ˜
     void Move(int way)
     {
         transform.Translate(new Vector3((Player_Speed * way) * Time.deltaTime, 0));
     }
 
-    // ÇÃ·¹ÀÌ¾îÀÇ »óÅÂ¸¦ º¯°æÇÏ´Â ÇÔ¼ö
+    // í”Œë ˆì´ì–´ì˜ ìƒíƒœë¥¼ ë³€ê²½í•˜ëŠ” í•¨ìˆ˜
     public void State_Change(string state)
     {
         switch (state)
@@ -103,7 +103,7 @@ public class Player : MonoBehaviour
 
     
 
-    // ÇöÁ¦ ´ë»óÀÎ NPCÀÇ ÀÌ¸§À» ¹İÈ¯ÇÑ´Ù.
+    // í˜„ì œ ëŒ€ìƒì¸ NPCì˜ ì´ë¦„ì„ ë°˜í™˜í•œë‹¤.
     public string return_name()
     {
         return Target_NPC.name;
