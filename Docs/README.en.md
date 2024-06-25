@@ -5,7 +5,7 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/Reference-C%23-green">
 </div> </br>
 
-<img alt="Title_V" src="https://github.com/SGteamproject2/se2_project/assets/162520578/5edfd7b1-fb23-4f31-b861-240a21bf263c">
+<img alt="Title_V" src="https://github.com/SGteamproject2/se2_project/assets/162520578/eb72b510-1121-481f-b108-d2c67606118e">
 
 ## 🌐 Background
 In a village in 19th century France, where Veronica lived as usual, a sudden appearance of a villain turned the village into a mess. After witnessing this scene, Veronica begins to trace the villain's footsteps by meeting villagers and solving quizzes they give her to find out where the villain went.
@@ -36,7 +36,7 @@ Veronica's Chase is a game where you explore various locations in the village, c
 - Game Name: Veronica's Chase
 - Period: 2024.05-2024.06
 - Engine & Language: Unity ( 2022.3.25f1 ) & C#
-- Members: 이희준, 이은성, 남윤성, 유민협
+- Members: LEE HUIJUN, LEE EUNSEONG, NAM YUNSEONG, YU MINHYEOP
 
 ## ➤ Contributors
 
