@@ -14,15 +14,15 @@ In a village in 19th century France, where Veronica lived as usual, a sudden app
 Veronica's Chase is a game where you explore various locations in the village, collect clues about the incident, participate in conversations, and track down the suspect.
 
 ## 🎮 Features
-| <img alt = "t_image_1" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/76b95152-1cce-4be6-8945-04f04ef87842" width="600"> | <img alt = "t_image_2" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/f23ecaec-3452-41d0-a18a-9bcf22051425" width="600"> | <img alt = "t_image_3" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/ea2a5322-ba16-49b8-ad58-b406f8548f6e" width="600"> |
+| <img alt = "t_image_1" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/b8f420ac-9d05-40ca-8bad-b082ec3f6ec5" width="600"> | <img alt = "t_image_2" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/452f61f9-1261-4cbf-8925-0958102b6ef3" width="600"> | <img alt = "t_image_3" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/999a6def-b87f-4558-ad76-036e2df077ba" width="600"> |
 |:--------:|:--------:|:--------:|
 - Solve diverse puzzles. </br>
 
-<img alt = "t_image_4" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/ee455984-e961-42d7-806b-e9d11ebe5ba5" width="600"> | <img alt = "t_image_5" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/39d450db-7690-4819-ae49-08d47e9eddb1" width="600"> | <img alt = "t_image_6" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/197a82e2-b2d7-49c8-b718-ca51d982e718" width="600">
+<img alt = "t_image_4" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/1d4333ed-b3ca-48b9-aeee-3ac9178b1fb2" width="600"> | <img alt = "t_image_5" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/e76d38e8-a8da-4492-a1b4-97cbd13c7887" width="600"> | <img alt = "t_image_6" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/197a82e2-b2d7-49c8-b718-ca51d982e718" width="600">
 |:--------:|:--------:|:--------:|
 - Listen to people's stories and deduce. </br>
 
-| <img alt = "t_image_7" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/7a21f6d8-701b-4e87-af38-8968bc046dfb" width="300"> |
+| <img alt = "t_image_7" src = "https://github.com/SGteamproject2/se2_project/assets/162520578/94b8a3bc-da8e-45f9-aeb9-e7e0ba9c42af" width="300"> |
 |:------:|
 - Use your deduction and imagination to find the culprit.
 
