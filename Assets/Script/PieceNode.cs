@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class PieceNode : MonoBehaviour, IDragHandler, IEndDragHandler
 {
-    // 자신이 드래그 되었을떼
+    // 자신이 드래그 되었을 때
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = eventData.position;
