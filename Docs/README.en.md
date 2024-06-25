@@ -34,7 +34,7 @@ Veronica's Chase is a game where you explore various locations in the village, c
 
 ## 📂 Information
 - Game Name: Veronica's Chase
-- Period: 2024.05-2024.06
+- Period: 2024.04-2024.06
 - Engine & Language: Unity ( 2022.3.25f1 ) & C#
 - Members: LEE HUIJUN, LEE EUNSEONG, NAM YUNSEONG, YU MINHYEOP
 
