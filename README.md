@@ -5,7 +5,7 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/Reference-C%23-green">
 </div> </br>
 
-<img alt="Title_V" src="https://github.com/SGteamproject2/se2_project/assets/162520578/5edfd7b1-fb23-4f31-b861-240a21bf263c">
+<img alt="Title_V" src="https://github.com/SGteamproject2/se2_project/assets/162520578/eb72b510-1121-481f-b108-d2c67606118e">
 
 </br> [English](./Docs/README.en.md)
 
